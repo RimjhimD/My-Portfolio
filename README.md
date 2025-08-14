@@ -17,11 +17,11 @@ This portfolio is designed to:
 
 ## 🖥️ Features
 
-- **Home Page** – A welcoming introduction with a brief summary of who I am.
-- **About Me** – Details about my academic background, interests, and goals.
-- **Skills** – A list of my technical and academic skills.
-- **Projects** – Showcasing my completed and ongoing projects with descriptions and links.
-- **Contact** – A simple contact form or direct links to my email and GitHub.
+- **Home Page** – A welcoming introduction with a brief summary of who I am.  
+- **About Me** – Details about my academic background, interests, and goals.  
+- **Skills** – A list of my technical and academic skills.  
+- **Projects** – Showcasing my completed and ongoing projects with descriptions and links.  
+- **Contact** – A simple contact form or direct links to my email and GitHub.  
 
 ---
 
@@ -35,22 +35,17 @@ My-Portfolio/
 ├── index.html # Main landing page
 └── README.md # Project documentation
 
-yaml
-Copy
-Edit
 
 ---
 
 ## 🚀 Technologies Used
 
-- **HTML5** – Structure and content
-- **CSS3** – Styling and layouts
-- **JavaScript** – Interactivity
-- *(Optional)* Bootstrap / TailwindCSS – UI framework (if used)
-- Git & GitHub – Version control
+- **HTML5** – Structure and content  
+- **CSS3** – Styling and layouts  
+- **JavaScript** – Interactivity  
+- **Git & GitHub** – Version control  
 
 ---
-
 
 ## 🎯 How to View My Portfolio
 
@@ -78,7 +73,5 @@ Email: rimjhimdey24@gmail.com
 
 GitHub: RimjhimD
 
-📄 License
-This project is licensed under the MIT License.
-
 ✨ Thank you for visiting my portfolio repository!
+
