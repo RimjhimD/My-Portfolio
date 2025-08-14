@@ -32,7 +32,6 @@ My-Portfolio/
 ├── assets/ # Images, icons, and other media files
 ├── css/ # Stylesheets
 ├── js/ # JavaScript files
-├── projects/ # Individual project files or subpages
 ├── index.html # Main landing page
 └── README.md # Project documentation
 
@@ -52,11 +51,6 @@ Edit
 
 ---
 
-## 📸 Screenshots
-
-> *(Add screenshots of your portfolio here to give viewers a preview.)*
-
----
 
 ## 🎯 How to View My Portfolio
 
