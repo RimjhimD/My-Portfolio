@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
+  <!-- Document Setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>All about Rii</title>
+  <!-- Linking external CSS file for styles -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
+  <!-- Sidebar Section: Contains greeting and resume links -->
   <aside class="sidebar" id="home">
     <div>
+      <!-- Main Heading for Sidebar -->
       <h1>Hello this is Rii</h1>
+
+      <!-- Resume Section with ARIA label for accessibility -->
       <section id="resume" aria-label="Resume Section">
-  <h2>My Resume</h2>
-  <div class="resume-buttons">
-  <a href="assets/Rimjhim_Dey_CV.pdf" target="_blank" class="btn">View Resume</a>
-  <a href="assets/Rimjhim_Dey_CV.pdf" download class="btn">Download Resume</a>
-</div>
-
-
-</section>
+        <h2>My Resume</h2>
+        <div class="resume-buttons">
+          <!-- View Resume opens PDF in a new tab -->
+          <a href="assets/Rimjhim_Dey_CV.pdf" target="_blank" class="btn">View Resume</a>
+          <!-- Download Resume allows local download -->
+          <a href="assets/Rimjhim_Dey_CV.pdf" download class="btn">Download Resume</a>
+        </div>
+      </section>
     </div>
   </aside>
 
+  <!-- Header & Navigation Bar -->
   <header>
     <nav>
       <ul>
+        <!-- Links navigate to respective page sections -->
         <li><a href="#home" tabindex="0">Home</a></li>
         <li><a href="#about" tabindex="0">About Me</a></li>
+        <li><a href="#education" tabindex="0">Education</a></li>
         <li><a href="#skills" tabindex="0">Skills</a></li>
         <li><a href="#projects" tabindex="0">Projects</a></li>
         <li><a href="#contact" tabindex="0">Contact Me</a></li>
@@ -35,124 +44,161 @@
     </nav>
   </header>
 
+  <!-- Main Content Area -->
   <main>
+    <!-- About Section -->
     <section id="about" aria-label="About Me Section">
-  <h1>About Me</h1>
+      <h1>About Me</h1>
 
-  <div class="about-wrapper">
-    <!-- Round picture beside text -->
-    <img src="assets/Rii1.jpeg" alt="Rii photo 1" class="round-pic" />
+      <!-- Wrapper for image and text -->
+      <div class="about-wrapper">
+        <!-- Profile Picture -->
+        <div class="upper-pic-container">
+          <img src="assets/Rii1.jpeg" alt="Rii photo 1" class="round-pic" />
+        </div>
+        <!-- About text description -->
+        <div class="about-text">
+          <p class="fun-text">
+            I'm Rimjhim, an undergraduate Computer Science and Engineering student,
+            continuously learning and exploring new technologies like AI and software development
+            to build practical solutions.
+          </p>
+        </div>
+      </div>
 
-    <div class="about-text">
-      <p>I'm Rimjhim, an undergraduate Computer Science and Engineering student, continuously learning and exploring new technologies like AI and software development to build practical solutions..</p>
+      <!-- Photo Stack with Floating Words -->
+      <div class="photo-stack">
+        <img src="assets/Rii2.jpg" alt="Rii photo 2" class="polaroid" />
 
-    </div>
-  </div>
+        <!-- Floating words container: Fun facts / animation -->
+        <div class="floating-words">
+          <span>Rii loves sleep 😴</span>
+          <span>She hunts bugs 🐛</span>
+          <span>Powered by coffee ☕</span>
+          <span>Plays games all night 🎮</span>
+          <span>Annoys ChatGPT all the time 🤖</span>
+        </div>
 
-  <div class="photo-stack">
-    <img src="assets/Rii2.jpg" alt="Rii photo 2" class="fade-in delay1" />
-    <img src="assets/Rii4.jpg" alt="Rii photo 4" class="fade-in delay3" />
-  </div>
-</section>
+        <img src="assets/Rii4.jpg" alt="Rii photo 4" class="polaroid" />
+      </div>
+    </section>
 
+    <!-- Education Section -->
+    <section id="education" aria-label="Education Section">
+      <h1>Education</h1>
+
+      <div class="education-container">
+        <!-- Education Item: University -->
+        <div class="education-item">
+          <img src="assets/EducationImage/Uni.png" alt="Premier University Campus" />
+          <div class="edu-text">
+            <h2>Premier University</h2>
+            <p>B.Sc in CSE, 3rd Year, 6th Semester</p>
+            <p>[2022 - Present]</p>
+          </div>
+        </div>
+
+        <!-- Education Item: College -->
+        <div class="education-item">
+          <img src="assets/EducationImage/College.png" alt="Bakalia Govt College" />
+          <div class="edu-text">
+            <h2>Bakalia Govt College</h2>
+            <p>College (HSC)</p>
+            <p>[2019 - 2021]</p>
+          </div>
+        </div>
+
+        <!-- Education Item: School -->
+        <div class="education-item">
+          <img src="assets/EducationImage/DKS.png" alt="Dr Khastagir Govt Girls High School" />
+          <div class="edu-text">
+            <h2>Dr Khastagir Government Girls High School</h2>
+            <p>School (SSC)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills" aria-label="Skills Section">
       <h1>Skills</h1>
       <div class="skills-container">
-        <div class="skill">
-          <img src="assets/Icons/C.svg" alt="C" />
-          C
-        </div>
-        <div class="skill">
-          <img src="assets/Icons/C++ (CPlusPlus).svg" alt="C++" />
-          C++
-        </div>
-        <div class="skill">
-          <img src="assets/Icons/Java.svg" alt="Java" />
-          Java
-        </div>
-        <div class="skill">
-          <img src="assets/Icons/Python.svg" alt="Python" />
-          Python
-        </div>
-        <div class="skill">
-          <img src="assets/Icons/JavaScript.svg" alt="JavaScript" />
-          JavaScript
-        </div>
-        <div class="skill">
-          <img src="assets/Icons/PHP.svg" alt="PHP" />
-          PHP
-        </div>
-        <div class="skill">
-          <img src="assets/Icons/Laravel.svg" alt="Laravel" />
-          Laravel
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-          HTML5
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
-          Kotlin
-        </div>
+        <!-- Each skill includes icon and label -->
+        <div class="skill"><img src="assets/Icons/C.svg" alt="C" />C</div>
+        <div class="skill"><img src="assets/Icons/C++ (CPlusPlus).svg" alt="C++" />C++</div>
+        <div class="skill"><img src="assets/Icons/Java.svg" alt="Java" />Java</div>
+        <div class="skill"><img src="assets/Icons/Python.svg" alt="Python" />Python</div>
+        <div class="skill"><img src="assets/Icons/JavaScript.svg" alt="JavaScript" />JavaScript</div>
+        <div class="skill"><img src="assets/Icons/PHP.svg" alt="PHP" />PHP</div>
+        <div class="skill"><img src="assets/Icons/Laravel.svg" alt="Laravel" />Laravel</div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />HTML5</div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" />Kotlin</div>
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" aria-label="Projects Section">
       <h1>Projects</h1>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project">
+          <img src="assets/ProjectsIcon/freecodecamp.png" alt="FreeCodeCamp logo..." />
+          <p>Completed web development projects focusing on HTML & CSS fundamentals.</p>
+          <a href="https://github.com/RimjhimD/freeCodeCamp-Projects" target="_blank" class="btn">GitHub Repo</a>
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+        </div>
 
-      <div class="project">
-        <img src="https://raw.githubusercontent.com/RimjhimD/freeCodeCamp-Projects/main/screenshot.png" alt="FreeCodeCamp Projects" />
-        <p>Completed web development projects focusing on HTML & CSS fundamentals.</p>
-        <a href="https://github.com/RimjhimD/freeCodeCamp-Projects" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-      </div>
+        <!-- Project 2 -->
+        <div class="project">
+          <img src="assets/ProjectsIcon/CRUDCare.png" alt="Red blood drop..." />
+          <p>Secure user authentication and backend data management for blood bank.</p>
+          <a href="https://github.com/RimjhimD/CRUDCare-Blood-Bank-Management-System-" target="_blank" class="btn">GitHub Repo</a>
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+        </div>
 
-      <div class="project">
-        <img src="https://raw.githubusercontent.com/RimjhimD/CRUDCare-Blood-Bank-Management-System-/main/screenshot.png" alt="CRUDCare Blood Bank" />
-        <p>Secure user authentication and backend data management for blood bank.</p>
-        <a href="https://github.com/RimjhimD/CRUDCare-Blood-Bank-Management-System-" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-      </div>
+        <!-- Project 3 -->
+        <div class="project">
+          <img src="assets/ProjectsIcon/payroll.png" alt="Payroll software illustration..." />
+          <p>Responsive payment form with optimized structured transaction tables.</p>
+          <a href="https://github.com/RimjhimD/PayCraft" target="_blank" class="btn">GitHub Repo</a>
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+        </div>
 
-      <div class="project">
-        <img src="https://raw.githubusercontent.com/RimjhimD/PayCraft/main/screenshot.png" alt="PayCraft Digital Payment UI" />
-        <p>Responsive payment form with optimized structured transaction tables.</p>
-        <a href="https://github.com/RimjhimD/PayCraft" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-      </div>
-
-      <div class="project">
-        <img src="https://raw.githubusercontent.com/RimjhimD/ESP-32-Web-Server-with-DHT11-Sensor/main/screenshot.png" alt="ESP32 Web Server" />
-        <p>Real-time temperature & humidity data capture and display on</p>
-        <a href="https://github.com/RimjhimD/ESP-32-Web-Server-with-DHT11-Sensor.git" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        <!-- Project 4 -->
+        <div class="project">
+          <img src="assets/ProjectsIcon/Esp32.png" alt="ESP32 microcontroller chip..." />
+          <p>Real-time temperature & humidity data capture and display.</p>
+          <a href="https://github.com/RimjhimD/ESP-32-Web-Server-with-DHT11-Sensor" target="_blank" class="btn">GitHub Repo</a>
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+        </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" aria-label="Contact Me Section">
       <div class="contact-info">
         <h1>Contact Me</h1>
+        <!-- Social Links -->
         <p>
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.983 3.5c0 1.381-1.11 2.5-2.483 2.5S0 4.881 0 3.5 1.111 1 2.5 1 4.983 2.119 4.983 3.5zm-.036 3.5H0v12h5v-12zm7.5 0h-4.5v12h4.5v-6.5c0-2.5 3-2.7 3 0v6.5h4.5v-7.5c0-6-7-5.8-7 0v-4.5z"/></svg>
+          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
         </p>
         <p>
-          <a href="https://github.com/RimjhimD" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.3c-3.3.7-4-1.5-4-1.5a3.15 3.15 0 00-1.3-1.8c-1-.6.1-.6.1-.6a2.5 2.5 0 011.8 1.3 2.55 2.55 0 003.5 1 2.55 2.55 0 01.7-1.6c-2.7-.3-5.5-1.3-5.5-6a5 5 0 011.3-3.5 4.7 4.7 0 01.1-3.4s1-.3 3.4 1.3a11.6 11.6 0 016.2 0c2.4-1.6 3.4-1.3 3.4-1.3a4.7 4.7 0 01.1 3.4 5 5 0 011.3 3.5c0 4.7-2.8 5.7-5.5 6a2.8 2.8 0 01.8 2.2v3.2c0 .3.2.7.8.6A12 12 0 0012 0z"/></svg>
+          <a href="https://github.com/RimjhimD" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </p>
         <p>
-          <a href="https://codeforces.com/profile/Peew" target="_blank" rel="noopener noreferrer" aria-label="Codeforces">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.999 0C5.373 0 0 5.372 0 11.999S5.373 24 12 24c6.628 0 12-5.372 12-12 0-6.627-5.372-11.999-12-11.999zm5.375 7.676c-.01.012-.02.025-.03.038l-1.793 2.6a.328.328 0 01-.453.088l-3.204-2.21c-.083-.057-.186-.086-.29-.086a.463.463 0 00-.464.464v5.284c0 .19.14.352.326.408.039.01.078.016.118.016a.332.332 0 00.241-.106l4.967-5.34c.02-.02.035-.044.046-.07a.37.37 0 00-.061-.395z"/></svg>
+          <a href="https://codeforces.com/profile/Peew" target="_blank" rel="noopener noreferrer">
             Codeforces
           </a>
         </p>
-        <p>
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="#b83280" style="vertical-align: middle; margin-right: 6px;">
-    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.5 2.5.77 3.83.77a1 1 0 011 1v3.5a1 1 0 01-1 1C7.82 21.44 2.56 16.18 2.56 9a1 1 0 011-1h3.5a1 1 0 011 1c0 1.33.26 2.63.77 3.83a1 1 0 01-.21 1.11l-2.2 2.2z"/>
-  </svg
-          Phone: <a href="tel:+8801533473780" aria-label="Phone Number">+880 1533 473 780</a>
-        </p>
+        <!-- Phone -->
+        <p>Phone: <a href="tel:+8801533473780" aria-label="Phone Number">+880 1533 473 780</a></p>
       </div>
+
+      <!-- Contact Form -->
       <form class="contact-form" id="contactForm" aria-label="Contact Form">
         <h1>Send a Message</h1>
         <label for="name">Name</label>
@@ -166,10 +212,12 @@
     </section>
   </main>
 
+  <!-- Footer Section -->
   <footer>
     &copy; 2025 Rimjhim Dey. All rights reserved.
   </footer>
 
+  <!-- Linking external JavaScript for interactivity -->
   <script src="/js/script.js"></script>
 </body>
 </html>
