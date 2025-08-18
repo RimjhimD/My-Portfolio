@@ -472,6 +472,7 @@ section h1 {
 .project a:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
 .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; justify-items: center; }
 
+
 /* ==========================================
    Contact Section
    ========================================== */
@@ -484,39 +485,96 @@ section h1 {
   backdrop-filter: blur(20px);
 }
 .contact-info h1, .contact-form h1 { margin-bottom: 1.5rem; }
-.contact-info p { margin-bottom: 1rem; display: flex; align-items: center; }
-.contact-info a { color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s ease; }
+.contact-info p {
+  margin-bottom: 1rem;   /* keep spacing */
+}
+.contact-info a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 .contact-info a:hover { color: var(--accent); }
 .contact-info svg { width: 20px; height: 20px; fill: var(--primary); }
 
-.contact-form label { display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 500; }
-.contact-form input, .contact-form textarea {
+.contact-form {
+  background: var(--surface-light);
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  margin: 0 auto 2rem auto; /* center horizontally */
+  backdrop-filter: blur(20px);
+  max-width: 800px;
   width: 100%;
-  padding: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form h1 {
+  font-size: 2rem;            /* same as Contact Me */
+  color: var(--primary);       /* same color */
+  font-family: var(--font-heading); /* same font */
+  text-align: center;
+  margin-bottom: 1.5rem;      /* same spacing */
+}
+
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   color: var(--text-primary);
   font-family: var(--font-body);
-  margin-bottom: 1rem;
-  transition: border-color 0.3s ease;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.contact-form input:focus, .contact-form textarea:focus {
+
+.contact-form input:focus,
+.contact-form textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
 }
+
 .contact-form button {
+  display: block;
+  width: 30%;
   background: var(--gradient-primary);
   color: var(--text-primary);
   border: none;
-  padding: 0.75rem 2rem;
+  padding: 0.85rem 0;
   border-radius: var(--radius);
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 0.5rem;
 }
-.contact-form button:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
 
 /* ==========================================
    Footer Section

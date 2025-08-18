@@ -7,6 +7,7 @@
   <title>Portfolio</title>
   <!-- Linking external CSS file for styles -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -21,9 +22,9 @@
         <h2>My Resume</h2>
         <div class="resume-buttons">
           <!-- View Resume opens PDF in a new tab -->
-          <a href="assets/Rimjhim_cv.pdf" target="_blank" class="btn">View Resume</a>
+          <a href="assets/My_CV.pdf" target="_blank" class="btn">View Resume</a>
           <!-- Download Resume allows local download -->
-          <a href="assets/Rimjhim_cv.pdf" download class="btn">Download Resume</a>
+          <a href="assets/My_CV.pdf" download class="btn">Download Resume</a>
         </div>
       </section>
     </div>
@@ -143,66 +144,84 @@
 
 
     <!-- Projects Section -->
-    <section id="projects" aria-label="Projects Section">
-      <h1>Projects</h1>
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project">
-          <img src="assets/ProjectsIcon/freecodecamp.png" alt="FreeCodeCamp logo..." />
-          <p>Completed web development projects focusing on HTML & CSS fundamentals.</p>
-          <a href="https://github.com/RimjhimD/freeCodeCamp-Projects" target="_blank" class="btn">GitHub Repo</a>
-          <a href="#" target="_blank" class="btn">Live Demo</a>
-        </div>
+<section id="projects" aria-label="Projects Section">
+  <h1>Projects</h1>
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project">
+      <img src="assets/ProjectsIcon/freecodecamp.png" alt="FreeCodeCamp logo..." />
+      <h3>FreeCodeCamp Projects</h3>
+      <p>Completed web development projects focusing on HTML & CSS fundamentals.</p>
+      <a href="https://github.com/RimjhimD/freeCodeCamp-Projects" target="_blank" class="btn">GitHub Repo</a>
+    </div>
 
-        <!-- Project 2 -->
-        <div class="project">
-          <img src="assets/ProjectsIcon/CRUDCare.png" alt="Red blood drop..." />
-          <p>Secure user authentication and backend data management for blood bank.</p>
-          <a href="https://github.com/RimjhimD/CRUDCare-Blood-Bank-Management-System-" target="_blank" class="btn">GitHub Repo</a>
-          <a href="#" target="_blank" class="btn">Live Demo</a>
-        </div>
+    <!-- Project 2 -->
+    <div class="project">
+      <img src="assets/ProjectsIcon/CRUDCare.png" alt="Red blood drop..." />
+      <h3>CRUDCare</h3>
+      <p>Secure user authentication and backend data management for blood bank.</p>
+      <a href="https://github.com/RimjhimD/CRUDCare-Blood-Bank-Management-System-" target="_blank" class="btn">GitHub Repo</a>
+    </div>
 
-        <!-- Project 3 -->
-        <div class="project">
-          <img src="assets/ProjectsIcon/payroll.png" alt="Payroll software illustration..." />
-          <p>Responsive payment form with optimized structured transaction tables.</p>
-          <a href="https://github.com/RimjhimD/PayCraft" target="_blank" class="btn">GitHub Repo</a>
-          <a href="#" target="_blank" class="btn">Live Demo</a>
-        </div>
+    <!-- Project 3 -->
+    <div class="project">
+      <img src="assets/ProjectsIcon/payroll.png" alt="Payroll software illustration..." />
+      <h3>PayCraft</h3>
+      <p>Responsive payment form with optimized structured transaction tables.</p>
+      <a href="https://github.com/RimjhimD/PayCraft" target="_blank" class="btn">GitHub Repo</a>
+    </div>
 
-        <!-- Project 4 -->
-        <div class="project">
-          <img src="assets/ProjectsIcon/Esp32.png" alt="ESP32 microcontroller chip..." />
-          <p>Real-time temperature & humidity data capture and display.</p>
-          <a href="https://github.com/RimjhimD/ESP-32-Web-Server-with-DHT11-Sensor" target="_blank" class="btn">GitHub Repo</a>
-          <a href="#" target="_blank" class="btn">Live Demo</a>
-        </div>
-      </div>
-    </section>
+    <!-- Project 4 -->
+    <div class="project">
+      <img src="assets/ProjectsIcon/Esp32.png" alt="ESP32 microcontroller chip..." />
+      <h3>ESP32 Web Server with DHT11 Sensor</h3>
+      <p>Real-time temperature & humidity data capture and display.</p>
+      <a href="https://github.com/RimjhimD/ESP-32-Web-Server-with-DHT11-Sensor" target="_blank" class="btn">GitHub Repo</a>
+    </div>
+  </div>
+</section>
 
     <!-- Contact Section -->
-    <section id="contact" aria-label="Contact Me Section">
-      <div class="contact-info">
-        <h1>Contact Me</h1>
-        <!-- Social Links -->
-        <p>
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </p>
-        <p>
-          <a href="https://github.com/RimjhimD" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </p>
-        <p>
-          <a href="https://codeforces.com/profile/Peew" target="_blank" rel="noopener noreferrer">
-            Codeforces
-          </a>
-        </p>
-        <!-- Phone -->
-        <p>Phone: <a href="tel:+8801630083289" aria-label="Phone Number">+8801630083289</a></p>
-      </div>
+<section id="contact" aria-label="Contact Me Section">
+  <div class="contact-info">
+    <h1>Contact Me</h1>
+
+    <!-- LinkedIn -->
+    <p>
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </p>
+
+    <!-- GitHub -->
+    <p>
+      <a href="https://github.com/RimjhimD" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </p>
+
+    <!-- Codeforces -->
+    <p>
+      <a href="https://codeforces.com/profile/Peew" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-code"></i> Codeforces
+      </a>
+    </p>
+
+    <!-- Email -->
+    <p>
+      <a href="mailto:rimjhimdey91@gmail.com">
+        <i class="fas fa-envelope"></i> rimjhimdey91@gmail.com
+      </a>
+    </p>
+
+    <!-- Phone -->
+    <p>
+      <a href="tel:+8801630083289" aria-label="Phone Number">
+        <i class="fas fa-phone"></i> +8801630083289
+      </a>
+    </p>
+  </div>
+</section>
 
       <!-- Contact Form -->
       <form class="contact-form" id="contactForm" aria-label="Contact Form">
