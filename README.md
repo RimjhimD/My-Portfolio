@@ -1,7 +1,6 @@
 # My-Portfolio
 
-Welcome to my personal portfolio repository!  
-This portfolio has been created to showcase my projects, skills, academic work, and personal achievements as a student. It reflects my learning journey, technical growth, and the work I’ve completed so far.
+I’m exploring and experimenting by creating this portfolio website. It’s made for fun and to learn how to build better projects while improving my skills.
 
 ---
 
@@ -69,7 +68,7 @@ Make your changes.
 Submit a pull request.
 
 📬 Contact
-Email: rimjhimdey24@gmail.com
+Email: rimjhimdey91@gmail.com
 
 GitHub: RimjhimD
 
